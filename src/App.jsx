@@ -60,20 +60,25 @@ import UseEffectDemo from "./components/useEffectDemo";
 import FetchUser from "./components/FetchUser";
 import UseForm from "./components/UseForm";
 import TodoList from "./components/TodoList";
+import LiftStateUp from "./components/LiftStateUp.jsx/LiftStateUp";
+import UserDashboard from "./components/UserDashboard";
 
 const App = () => {
   return (
     <>
       {/* <Welcome name="asim" goal="to master React" />
-<Counter/>
-<NameInput/>
-<LanguageSelector/> */}
-      {/* <ToggleMessage/> */}
-      {/* <FruitList/> */}
-      {/* <UseEffectDemo/>
-<FetchUser/> */}
-      {/* <UseForm/> */}
-      <TodoList />
+      <Counter />
+      <NameInput />
+      <LanguageSelector />
+      <ToggleMessage />
+      <FruitList />
+      <UseEffectDemo />
+      <FetchUser />
+      <UseForm />
+      <TodoList /> */}
+      {/* <LiftStateUp/> */}
+
+      <UserDashboard/>
     </>
   );
 };
