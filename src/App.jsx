@@ -51,7 +51,7 @@
 // export default App;
 import React from "react";
 import Welcome from "./components/Welcome";
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
 import NameInput from "./components/NameInput";
 import LanguageSelector from "./components/LanguageSelector";
 import ToggleMessage from "./components/ToggleMessage";
@@ -62,11 +62,16 @@ import UseForm from "./components/UseForm";
 import TodoList from "./components/TodoList";
 import LiftStateUp from "./components/LiftStateUp.jsx/LiftStateUp";
 import UserDashboard from "./components/UserDashboard";
-
+import { CounterProvider } from "./ContextApi/CounterContext";
+// import Counter from "./ContextApi/Counter";
+import ContextCounterExample from "./ContextApi/ContextCounterExample";
+import DateTime from "./components/DateTime";
 const App = () => {
   return (
     <>
-      {/* <Welcome name="asim" goal="to master React" />
+      <CounterProvider>
+        {" "}
+        {/* <Welcome name="asim" goal="to master React" />
       <Counter />
       <NameInput />
       <LanguageSelector />
@@ -76,9 +81,11 @@ const App = () => {
       <FetchUser />
       <UseForm />
       <TodoList /> */}
-      {/* <LiftStateUp/> */}
-
-      <UserDashboard/>
+        {/* <LiftStateUp/> */}
+        {/* <UserDashboard /> */}
+        {/* <ContextCounterExample/> */}
+        <DateTime/>
+      </CounterProvider>
     </>
   );
 };
