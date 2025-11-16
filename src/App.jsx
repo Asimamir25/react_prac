@@ -66,6 +66,9 @@ import { CounterProvider } from "./ContextApi/CounterContext";
 // import Counter from "./ContextApi/Counter";
 import ContextCounterExample from "./ContextApi/ContextCounterExample";
 import DateTime from "./components/DateTime";
+import UserFilter from "./components/UserFilter";
+import DynamicMultipleField from "./components/DynamicMultipleField";
+import DebounceCounter from "./components/DebounceCounter";
 const App = () => {
   return (
     <>
@@ -84,7 +87,10 @@ const App = () => {
         {/* <LiftStateUp/> */}
         {/* <UserDashboard /> */}
         {/* <ContextCounterExample/> */}
-        <DateTime/>
+        {/* <DateTime/> */}
+        {/* <UserFilter/> */}
+        <DebounceCounter/>
+        {/* <DynamicMultipleField/> */}
       </CounterProvider>
     </>
   );
